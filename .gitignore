@@ -165,3 +165,5 @@ public/robots.txt
 # zone identifier
 *:Zone.Identifier
 .vercel
+.DS_Store
+.vscode

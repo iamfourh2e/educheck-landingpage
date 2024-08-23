@@ -1,9 +1,9 @@
 <route lang="yaml">
-  meta:
-    layout: default
-  </route>
-  
-  <script setup lang="ts">
+meta:
+layout: default
+</route>
+
+<script setup lang="ts">
 import {
   mobileAppFeatures,
   runningFeature,
@@ -11,13 +11,18 @@ import {
   dashboardFeature,
   workoutTimeline,
   workoutPricingPlans,
-  workoutTestimonials,
-  workoutFaq,
 } from '/@src/data/pages/workout'
-import { socialLinks } from '/@src/data/blocks/advanced/social'
+
+const images = [
+  'https://firebasestorage.googleapis.com/v0/b/cosmos-land.appspot.com/o/landing_page%2Ft1.png?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/cosmos-land.appspot.com/o/landing_page%2Ft2.png?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/cosmos-land.appspot.com/o/landing_page%2Ft3.png?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/cosmos-land.appspot.com/o/landing_page%2Ft4.png?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/cosmos-land.appspot.com/o/landing_page%2Ft5.png?alt=media',
+]
 </script>
-  
-  <template>
+
+<template>
   <div>
     <HeroE1 />
 
@@ -77,7 +82,25 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
         />
       </Container>
     </Section>
-
+    <Section>
+      <Container>
+        <SectionTitle
+          title="កម្មវិធីសម្រាប់គ្រូបង្រៀន / សម្រាប់ចុះវត្តមាន / កត់ពិន្ទុ"
+          subtitle=""
+        />
+        <div class="flex flex-row">
+          <AppSectionShapes
+            v-for="i in images"
+            :key="i"
+            style="padding: 5px"
+            :features="[]"
+            :image="i"
+            :dark-image="i"
+            blob
+          />
+        </div>
+      </Container>
+    </Section>
     <Section>
       <Container>
         <SectionTitle
@@ -148,4 +171,3 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
     />
   </div>
 </template>
-  

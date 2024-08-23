@@ -26,18 +26,18 @@ const props = withDefaults(defineProps<AppSectionShapesProps>(), {
     <div class="columns is-multiline py-6">
       <div class="column is-12">
         <div class="is-relative block mb-4 has-text-centered mx-auto max-w-8">
-          <div class="full-circle-1 text-success">
-            <Circle />
-          </div>
-          <div class="full-circle-2 text-primary">
-            <Circle />
-          </div>
-          <div class="full-circle-3 text-yellow">
-            <Circle />
-          </div>
-          <div class="half-circle-1 text-info">
-            <HalfCircle />
-          </div>
+          <!--<div class="full-circle-1 text-success">-->
+          <!--  <Circle />-->
+          <!--</div>-->
+          <!--<div class="full-circle-2 text-primary">-->
+          <!--  <Circle />-->
+          <!--</div>-->
+          <!--<div class="full-circle-3 text-yellow">-->
+          <!--  <Circle />-->
+          <!--</div>-->
+          <!--<div class="half-circle-1 text-info">-->
+          <!--  <HalfCircle />-->
+          <!--</div>-->
           <div>
             <DarkImage
               :src="props.image"
